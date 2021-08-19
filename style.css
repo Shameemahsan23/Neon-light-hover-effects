@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: consolas;
+    background: rgb(46, 52, 71);
+}
+.neon_lgt{
+  display: flex;
+}
+
+.neon_lgt a{
+    color: aqua;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 1s;
+    margin: 5px;
+
+}
+.neon_lgt a:hover{
+    color: rgb(250, 14, 104);
+    background: gold;
+    box-shadow: 0 0 10px gold, 0 0 80px gold;
+}
+.neon_lgt a span{
+    position: absolute;
+    display: block;
+}
+.neon_lgt a span:nth-child(1){
+    top: 0;
+    height: 2px;
+    width: 100%;
+    left: -100%;
+    background: linear-gradient(90deg, transparent,gold);
+}
+.neon_lgt a:hover span:nth-child(1){
+    left: 100%;
+    transition: 2s;
+}
+
+.neon_lgt a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,gold);
+}
+
+.neon_lgt a:hover span:nth-child(2){
+   top: 100%;
+   transition: 1s;
+   transition-delay: 0.25s;
+}
+
+.neon_lgt a span:nth-child(3){
+   bottom: 0;
+   right: -100%;
+   height: 2px;
+   width: 100%;
+   background: linear-gradient(270deg, transparent,gold);
+}
+.neon_lgt a:hover span:nth-child(3){
+   right: 100%;
+   transition:1s;
+   transition-delay: 0.5s;
+}
+.neon_lgt a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(360deg, transparent,gold);
+}
+.neon_lgt a:hover span:nth-child(4){
+
+   bottom: 100%;
+   transition:1s;
+   transition-delay: 0.75s;
+}
